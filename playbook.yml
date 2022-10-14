@@ -1,0 +1,7 @@
+- name: archRox
+  hosts: archrox
+
+  tasks:
+    - name: Hello world
+      script: '/bin/echo Hello World'
+

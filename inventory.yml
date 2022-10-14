@@ -1,0 +1,9 @@
+# Install sshpass to use ansible_password
+archlinux:
+  hosts: 
+    archrox:
+      ansible_host: localhost
+      ansible_port: 3022
+      ansible_user: root
+      ansible_password: toto
+
