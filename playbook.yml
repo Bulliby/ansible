@@ -2,6 +2,13 @@
   hosts: archrox
 
   tasks:
-    - name: Hello world
-      script: '/bin/echo Hello World'
-
+    - name: Run the equivalent of "pacman -Sy" as a separate step
+      community.general.pacman:
+        update_cache: true
+    - name: Install packages foo from repo
+      community.general.pacman:
+        name: 
+          - neovim
+          - vim
+          - screen
+        state: present

@@ -5,5 +5,4 @@ archlinux:
       ansible_host: localhost
       ansible_port: 3022
       ansible_user: root
-      ansible_password: toto
-
+      ansible_password: "{{ ssh_password }}"
